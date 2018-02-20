@@ -1,0 +1,48 @@
+Regression: Predicting House Prices
+
+Linear regression
+x-axis: independent variable (the predictor)
+y-axis: dependent variable (the observation or response variable)
+
+f(x) = w0 + w1x
+w0: intercept
+w1: slope (weight or regression coefficient)
+
+Residual sum of sqaures (RSS): the "cost" of using a model (i.e. how accurate)
+Seeking to minimize RSS
+
+Higher-order effects? 
+f(x) = w0 + w1x + w2x^2
+Even though a quadratic equation, still called "linear regression"
+Still seeking to minimize RSS
+
+Overfitting (i.e. adding a 13th order polynomial!) is a problem.
+More parameters implies lower RSS but predictions go to shit with so many parameters
+Predictions "go to shit" is the same as saying test error starts to get higher and higher
+Solution (i.e. "how to choose model order/complexity): 
+1) "train" the model by only considering a training (i.e. a subset) set of data
+2) calculate RSS using the training set (now called "training error") for each # of params
+3) choose # of params that minimize prediction error (i.e. test error, not to be confused with training error)
+
+Adding more features
+Square footage of house AND # of bathrooms
+The regression line becomes a hyperplane...fancy!
+When do we stop adding additional parameters...? (learn more in the regression topic)
+
+Big picture
+
+General
+training data -> feature extractor -> ML model -> quality metric
+
+Specific
+house id, house sales prices data 
+-> feature extraction...what's that?
+-> linear regression (produces weights on features based on training data)
+-> predicted house price (the observation or response variable)
+-> now we evaluate how well this particular model did based on some quality metric (min test error)
+
+
+
+ 
+
+ 
