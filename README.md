@@ -7,4 +7,4 @@ Nothing!
 (env setup, etc.)
 
 # Week 2 - linear regression
-[[https://github.com/brntsllvn/ml/blob/master/Wk2-regression/error.PNG]]
+[https://github.com/brntsllvn/ml/blob/master/Wk2-regression/error.PNG]
